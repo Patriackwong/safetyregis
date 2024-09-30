@@ -27,7 +27,7 @@
   <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
 
-    const liffId = "2006208641-VYAy7E4w";  //เปลี่ยนเป็น liffId ของที่สร้าง
+    const liffId = "2006333656-bO282oA0";  //เปลี่ยนเป็น liffId ของที่สร้าง
 
     liff.ready
       .then(() => {
@@ -35,14 +35,14 @@
           return liff.getProfile();
         } else {
           liff.login({
-            redirectUri: "https://patriackwong.github.io/NS-Register/", //เปลี่ยนเป็น URL ที่สร้าง replit
+            redirectUri: "", //เปลี่ยนเป็น URL ที่สร้าง replit
           });
         }
       })
       .then((profile) => {
         window.location.replace(
           `
-https://docs.google.com/forms/d/e/1FAIpQLSdXWpPdZNbU7erTX4rSc1aCAzgo9exRP1ERpYpFt5WcwVcjEw/viewform?usp=pp_url&entry.280199702=${profile.userId}
+https://docs.google.com/forms/d/e/1FAIpQLSdHy29p-yMbvuRKIRGmm7uYUnBrNrG3dBv-Uab49NgforLMKw/viewform?usp=pp_url&entry.1101445655=${profile.userId}
 `
         );
       });
